@@ -3,7 +3,7 @@ let hashTable = new Map(); // Initialize a hash table
 let customerList = []; // Store the queue order
 
 function hashFunction(name) {
-    // Simple hash function (sum of character codes)
+    // Simple hash function
     return name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % 1000;
 }
 
